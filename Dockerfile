@@ -3,6 +3,7 @@ FROM php:7.1-fpm-alpine
 # install dependencies needed
 RUN apk add --no-cache \
     bash \
+    sed \
     git \
     subversion \
     mysql-client
