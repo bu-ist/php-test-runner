@@ -1,7 +1,5 @@
 # PHP Test Runner
 
-[![Docker pull](https://img.shields.io/docker/pulls/bostonuniversity/php-test-runner.svg)](https://hub.docker.com/r/bostonuniversity/php-test-runner/) [![Docker stars](https://img.shields.io/docker/stars/bostonuniversity/php-test-runner.svg)](https://hub.docker.com/r/bostonuniversity/php-test-runner/) [![Github issues](https://img.shields.io/github/issues/bu-ist/php-test-runner.svg)](https://github.com/bu-ist/php-test-runner/issues) [![License](https://img.shields.io/github/license/bu-ist/php-test-runner.svg)](https://github.com/bu-ist/php-test-runner/blob/master/LICENSE)
-
 A phpunit + xdebug container.
 
 ## Supported tags and respective Dockerfile links
@@ -13,7 +11,7 @@ A phpunit + xdebug container.
 - `php5.6` [(php5.6/apache/Dockerfile)](https://github.com/bu-ist/php-test-runner/blob/master/php5.6/apache/Dockerfile)
 - `php5.6-apache` [(php5.6-apache/apache/Dockerfile)](https://github.com/bu-ist/php-test-runner/blob/master/php5.6-apache/apache/Dockerfile)
 
-## Features
+## What does it come with?
 
 - phpunit
 - xdebug
@@ -28,22 +26,22 @@ A phpunit + xdebug container.
 
 ### Using it with `docker run`
 
-Run phpunit
+Run phpunit tests
 
 ```
-$ docker run -v $(pwd):/var/www/html --rm bostonuniversity/php-test-runner
+$ docker run -v $(pwd):/var/www/html --rm php-test-runner
 ```
 
 Get phpunit version
 
 ```
-$ docker run -v $(pwd):/var/www/html --rm bostonuniversity/php-test-runner phpunit --version
+$ docker run -v $(pwd):/var/www/html --rm php-test-runner phpunit --version
 ```
 
-Open shell
+Open shell in container
 
 ```
-$ docker run -v $(pwd):/var/www/html --rm bostonuniversity/php-test-runner bash
+$ docker run -v $(pwd):/var/www/html --rm -it php-test-runner bash
 ```
 
 ### Using it with `docker-compose run`
