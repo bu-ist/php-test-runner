@@ -69,3 +69,6 @@ RUN { \
     } >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 
 WORKDIR /var/www/html
+
+# Run phpunit tests by default
+CMD [ "phpunit" ]
