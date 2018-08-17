@@ -64,10 +64,24 @@ services:
 
 To execute the tests, run `docker-compose run --rm php-test-runner`.
 
+### Xdebug - Remote Debugging
+
+Xdebug is configured with the following settings:
+
+- `xdebug.remote_enable=1`
+- `xdebug.remote_autostart=1`
+- `xdebug.remote_host="host.docker.internal"`
+- `xdebug.remote_port="9000"`
+- `xdebug.remote_log="/var/log/xdebug.log"`
+
+You can set/override any setting by providing a `XDEBUG_CONFIG` environment variable like so:
+
+```
+$ docker run -e XDEBUG_CONFIG="remote_host=192.168.65.2 remote_port=8999" -v $(pwd):/var/www/html --rm bostonuniversity/php-test-runner
+```
+
+Note: As of August 2018 `host.docker.internal` will work with Docker for Mac and Docker for Windows. However, it still does not seem to be supported on Docker for Linux. See this github issue for more information regarding linux: https://github.com/docker/for-linux/issues/264
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Notes:
-
-- Xdebug is currently only configured to work when using Docker for Mac. We may fix this in the future. Feel free to submit a pull request if you want.
