@@ -51,7 +51,7 @@ RUN { \
 	  echo ''; \
 	  echo 'xdebug.remote_enable=1'; \
 	  echo 'xdebug.remote_autostart=1'; \
-	  echo 'xdebug.remote_host="docker.for.mac.localhost"'; \
+	  echo 'xdebug.remote_host="host.docker.internal"'; \
 	  echo 'xdebug.remote_port="9000"'; \
 	  echo 'xdebug.remote_log="/var/log/xdebug.log"'; \
 	} >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
