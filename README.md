@@ -4,12 +4,12 @@ A phpunit + xdebug container.
 
 ## Supported tags and respective Dockerfile links
 
-- `php7.1` `latest` [(php7.1/apache/Dockerfile)](https://github.com/bu-ist/php-test-runner/blob/master/php7.1/apache/Dockerfile)
-- `php7.1-apache` [(php7.1-apache/apache/Dockerfile)](https://github.com/bu-ist/php-test-runner/blob/master/php7.1-apache/apache/Dockerfile)
-- `php7.0` [(php7.0/apache/Dockerfile)](https://github.com/bu-ist/php-test-runner/blob/master/php7.0/apache/Dockerfile)
-- `php7.0-apache` [(php7.0-apache/apache/Dockerfile)](https://github.com/bu-ist/php-test-runner/blob/master/php7.0-apache/apache/Dockerfile)
-- `php5.6` [(php5.6/apache/Dockerfile)](https://github.com/bu-ist/php-test-runner/blob/master/php5.6/apache/Dockerfile)
-- `php5.6-apache` [(php5.6-apache/apache/Dockerfile)](https://github.com/bu-ist/php-test-runner/blob/master/php5.6-apache/apache/Dockerfile)
+- `php7.1-fpm-alpine` `php7.1` `latest` [(php7.1/fpm-alpine/Dockerfile)](https://github.com/bu-ist/php-test-runner/blob/master/php7.1/fpm-alpine/Dockerfile)
+- `php7.1-apache` [(php7.1/apache/Dockerfile)](https://github.com/bu-ist/php-test-runner/blob/master/php7.1/apache/Dockerfile)
+- `php7.0-fpm-alpine` `php7.0` [(php7.0/fpm-alpine/Dockerfile)](https://github.com/bu-ist/php-test-runner/blob/master/php7.0/fpm-alpine/Dockerfile)
+- `php7.0-apache` [(php7.0/apache/Dockerfile)](https://github.com/bu-ist/php-test-runner/blob/master/php7.0/apache/Dockerfile)
+- `php5.6-fpm-alpine` `php5.6` [(php5.6/fpm-alpine/Dockerfile)](https://github.com/bu-ist/php-test-runner/blob/master/php5.6/fpm-alpine/Dockerfile)
+- `php5.6-apache` [(php5.6/apache/Dockerfile)](https://github.com/bu-ist/php-test-runner/blob/master/php5.6/apache/Dockerfile)
 
 ## What does it come with?
 
