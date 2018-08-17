@@ -29,19 +29,19 @@ A phpunit + xdebug container.
 Run phpunit tests
 
 ```
-$ docker run -v $(pwd):/var/www/html --rm php-test-runner
+$ docker run -v $(pwd):/var/www/html --rm bostonuniversity/php-test-runner
 ```
 
 Get phpunit version
 
 ```
-$ docker run -v $(pwd):/var/www/html --rm php-test-runner phpunit --version
+$ docker run -v $(pwd):/var/www/html --rm bostonuniversity/php-test-runner phpunit --version
 ```
 
 Open shell in container
 
 ```
-$ docker run -v $(pwd):/var/www/html --rm -it php-test-runner bash
+$ docker run -v $(pwd):/var/www/html --rm -it bostonuniversity/php-test-runner bash
 ```
 
 ### Using it with `docker-compose run`
