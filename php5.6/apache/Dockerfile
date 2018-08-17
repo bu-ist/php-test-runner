@@ -43,7 +43,7 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
 WORKDIR /var/www/html
 
 # Install xdebug
-RUN pecl install xdebug \
+RUN pecl install xdebug-2.5.5 \
 	&& docker-php-ext-enable xdebug \
 	&& rm -rf /tmp/pear/
 # Configure xdebug
