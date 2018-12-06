@@ -68,6 +68,9 @@ RUN { \
 	  echo 'xdebug.remote_log="/var/log/xdebug.log"'; \
 	} >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 
+# Custom php.ini configuration
+ADD ./php-test-runner.ini /usr/local/etc/php/conf.d/php-test-runner.ini
+
 WORKDIR /var/www/html
 
 # Run phpunit tests by default
